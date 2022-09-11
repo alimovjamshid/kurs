@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculateDialog">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/usemoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Amerika puli"
+            android:textSize="@dimen/_16sdp" />
+
+        <EditText
+            android:id="@+id/usetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:text="1"
+            android:maxLines="1"
+            android:textSize="@dimen/_20sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_170sdp"
+            app:cardCornerRadius="@dimen/_25sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/uzbimg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/uzbname"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:text="UZS"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@color/black" />
+
+
+
+        <TextView
+            android:id="@+id/uzbmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_265sdp"
+            android:text="Uzbekiston Sum"
+            android:textSize="@dimen/_16sdp" />
+
+        <EditText
+            android:id="@+id/uzbtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_225sdp"
+            android:maxLines="1"
+            android:textSize="@dimen/_20sdp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            app:cardCornerRadius="@dimen/_25sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/useimg"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/usename"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:text="USA"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_gravity="center_vertical"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/purple_500"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_update_24" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
